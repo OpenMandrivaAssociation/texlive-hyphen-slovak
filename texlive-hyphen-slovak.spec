@@ -46,12 +46,12 @@ Original patterns 'skhyphen' are still distributed in the
 %install
 mkdir -p %{buildroot}%{_texmf_language_dat_d}
 cat > %{buildroot}%{_texmf_language_dat_d}/hyphen-slovak <<EOF
-%% from hyphen-slovak:
+\%\% from hyphen-slovak:
 slovak loadhyph-sk.tex
 EOF
 mkdir -p %{buildroot}%{_texmf_language_def_d}
 cat > %{buildroot}%{_texmf_language_def_d}/hyphen-slovak <<EOF
-%% from hyphen-slovak:
+\%\% from hyphen-slovak:
 \addlanguage{slovak}{loadhyph-sk.tex}{}{2}{3}
 EOF
 mkdir -p %{buildroot}%{_texmf_language_lua_d}
