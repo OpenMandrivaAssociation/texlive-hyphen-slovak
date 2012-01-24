@@ -5,8 +5,8 @@
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-hyphen-slovak
-Version:	20111103
-Release:	2
+Version:	20120124
+Release:	1
 Summary:	Slovak hyphenation patterns
 Group:		Publishing
 URL:		http://tug.org/texlive
@@ -46,14 +46,16 @@ Original patterns 'skhyphen' are still distributed in the
 %install
 mkdir -p %{buildroot}%{_texmf_language_dat_d}
 cat > %{buildroot}%{_texmf_language_dat_d}/hyphen-slovak <<EOF
-\%\% from hyphen-slovak:
+\%% from hyphen-slovak:
 slovak loadhyph-sk.tex
 EOF
+perl -pi -e 's|\\%%|%%|;' %{buildroot}%{_texmf_language_dat_d}/hyphen-slovak
 mkdir -p %{buildroot}%{_texmf_language_def_d}
 cat > %{buildroot}%{_texmf_language_def_d}/hyphen-slovak <<EOF
-\%\% from hyphen-slovak:
+\%% from hyphen-slovak:
 \addlanguage{slovak}{loadhyph-sk.tex}{}{2}{3}
 EOF
+perl -pi -e 's|\\%%|%%|;' %{buildroot}%{_texmf_language_def_d}/hyphen-slovak
 mkdir -p %{buildroot}%{_texmf_language_lua_d}
 cat > %{buildroot}%{_texmf_language_lua_d}/hyphen-slovak <<EOF
 -- from hyphen-slovak:
