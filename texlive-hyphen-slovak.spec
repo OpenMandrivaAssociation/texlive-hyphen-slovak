@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-hyphen-slovak
 Version:	20120611
-Release:	2
+Release:	3
 Summary:	Slovak hyphenation patterns
 Group:		Publishing
 URL:		http://tug.org/texlive
