@@ -1,6 +1,6 @@
 Name:		texlive-hyphen-slovak
 Version:	58609
-Release:	1
+Release:	2
 Summary:	Slovak hyphenation patterns
 Group:		Publishing
 URL:		http://tug.org/texlive
